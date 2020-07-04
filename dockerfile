@@ -12,4 +12,4 @@ COPY ./java_policy /etc
 RUN apt-get install -y libseccomp-dev git curl gcc g++ cmake git libseccomp-dev zip unzip
 # #编译judger沙盒
 RUN  cd /tmp && git clone -b newnew  --depth 1 https://github.com/QingdaoU/Judger && cd Judger && \
-    mkdir build && cd build && cmake .. && make && make install && cd ../bindings/Python && python3 setup.py ins
+    mkdir build && cd build && cmake .. && make && make install && cd ../bindings/Python && python3 setup.py install
